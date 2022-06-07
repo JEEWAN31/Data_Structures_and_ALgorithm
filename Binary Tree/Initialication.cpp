@@ -13,7 +13,7 @@ struct Node {
         right = NULL;
     }
 };
-
+//jsut some demo 
 int preorder(Node* head){
 
     if(head == NULL){
