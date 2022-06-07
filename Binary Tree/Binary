@@ -1,0 +1,15 @@
+// Binary Tree 
+//Every node have a max of 2 extensions one right and other left
+/*
+class Node{
+    int num;
+    Node* left;
+    Node* right;
+
+    public:
+    Node* Node(Val){
+        Num = Val;
+        left = NULL;
+        Right = NULL:
+    }
+}

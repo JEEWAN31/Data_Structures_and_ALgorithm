@@ -62,8 +62,8 @@ int main(){
     for (int i=0; i<n; i++){
         cin>>arr[i];
         cout<<endl;
-    }
-*/
+    }*/
+
     Node* head = new Node(1);
     head->left = new Node(2);
     head->right = new Node(3);
