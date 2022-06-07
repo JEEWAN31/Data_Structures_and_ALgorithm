@@ -55,7 +55,7 @@ int post_order(Node* head){
 }
 
 int main(){
-    int n ;
+    /*int n ;
     cin >> n;
     int arr [n];
     
@@ -63,7 +63,7 @@ int main(){
         cin>>arr[i];
         cout<<endl;
     }
-
+*/
     Node* head = new Node(1);
     head->left = new Node(2);
     head->right = new Node(3);
