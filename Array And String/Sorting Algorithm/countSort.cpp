@@ -7,19 +7,33 @@ void countSort (int arr[], int n){
     for(int i=1;i<n;i++){
         k= max(arr[i],k);
     }
-    int arr2[k] = {0};
+    int arr2[10] = {0};
     
     for(int i=0; i<n; i++){
         arr2[arr[i]]++;
     }
-    for (int i=1; i<k; i++){
+    cout<<"array after number of count"<<endl;
+    for(int i=0 ;i<n; i++){
+        cout<<arr2[i]<<endl;
+    }
+    for (int i=1; i<10; i++){
         arr2[i] += arr2[i-1];
     }
-    int arr3[n] = arr;
+    cout<<"array after sum of count"<<endl;
+    for(int i=0 ;i<n; i++){
+        cout<<arr2[i]<<endl;
+    }
+    int arr3[n] ;
+    for (int i=0; i<n; i++){
+        arr3[i] = arr[i];
+    }
 
     for(int i=n-1; i>=0; i--){
-        arr[arr2[arr3[i]]] = arr3[i];
-        arr2[arr3[i]]--;
+        arr3[--arr2[arr[i]]] = arr[i];
+    }
+    cout<<"Hola"<<endl;
+    for (int i=0; i<n; i++){
+        cout<<arr3[i]<<endl;
     }
 
 }
@@ -30,13 +44,13 @@ int main(){
     int arr[n];
 
     for (int i=0; i<n; i++){
-        cin>>arr[i]>>endl;
+        cin>>arr[i];
     }
 
     countSort(arr,n);
-
+/*
     for (int i=0; i<n; i++){
         cout<<arr[i]<<endl;
     }
-
+*/
 }
