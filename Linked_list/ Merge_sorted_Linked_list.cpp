@@ -39,6 +39,17 @@ using namespace std;
         return head->next;
     }
 
+class ListNode{
+    int val ;
+    ListNode* node;
+
+    public:
+        ListNode(x){
+            val = x;
+            node = NULL;
+        }
+}
+
 void main(){
-    int 
+    
 }

@@ -7,15 +7,16 @@ void DNFSort(int arr[], int n){
     int end = n-1;
 
     while (mid<=end){
-        if(mid ==1){
-            mid ++;
-        }
-        else if (mid ==0){
+        if (mid ==0){
             int temp = arr[mid];
             arr[mid]= arr[init];
             arr[init] = temp;
             mid++;
             init ++;
+        }
+        
+        else if(mid ==1){
+            mid ++;
         }
         else {
             int temp = arr[mid];
